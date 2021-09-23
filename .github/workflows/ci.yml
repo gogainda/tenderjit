@@ -26,9 +26,9 @@ jobs:
             brew install capstone
 
       - name: Set up Ruby
-        uses: tenderlove/setup-ruby@958450b9580ab6dae181237d74f1ecbb1d3b9a4b
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.0.2"
+          ruby-version: "truffleruby-head"
       - name: Install dependencies
         run: bundle install
       - name: Run tests
